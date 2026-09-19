@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'Space Mono', monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  /* Custom refined scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f1115;
+  }
+  .light ::-webkit-scrollbar-track {
+    background: #fafafa;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #332d20;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c5a059;
+  }
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-ui {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-code {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Metallic Brass Shimmer effects for craftsmanship editorial */
+.brass-gradient {
+  background: linear-gradient(135deg, #c5a059 0%, #e8cf8d 50%, #9c7b38 100%);
+}
+
+.brass-gradient-subtle {
+  background: linear-gradient(135deg, rgba(197, 160, 89, 0.12) 0%, rgba(232, 207, 141, 0.05) 50%, rgba(156, 123, 56, 0.08) 100%);
+}
+
+.brass-border-glow {
+  border-color: rgba(197, 160, 89, 0.35);
+  box-shadow: 0 0 20px -5px rgba(197, 160, 89, 0.12);
+}
+
+.brass-text-gradient {
+  background: linear-gradient(135deg, #e8cf8d 0%, #c5a059 45%, #d9bc79 70%, #9c7b38 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism utilities */
+.glass-dark {
+  background: rgba(15, 17, 21, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 160, 89, 0.15);
+}
+
+.glass-light {
+  background: rgba(250, 250, 250, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 160, 89, 0.22);
+}
+
+
